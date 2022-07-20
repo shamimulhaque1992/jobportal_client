@@ -7,7 +7,6 @@ import ViewJobs from "./Pages/VeiwJobs/ViewJobs";
 import PostJobs from "./Pages/PostJobs/PostJobs";
 import Navbar from "./Pages/Shared/Navbar/Navbar";
 import Login from "./Pages/Login/Login";
-import Test from "./Pages/Login/Test";
 import Register from "./Pages/Register/Register";
 import RequireAuth from "./Pages/Login/RequireAuth";
 import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";

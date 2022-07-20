@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
+import GoogleIcon from '@mui/icons-material/Google';
+import "./Login.css"
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { useForm } from "react-hook-form";
 import {
   useSendPasswordResetEmail,
@@ -153,11 +155,10 @@ const Login = () => {
               </Link>
             </label>
             {authError}
-            <input
-              className="btn btn-primary w-full max-w-xs"
+            <button
+              className="btn btn-primary w-full max-w-xs login"
               type="submit"
-              value="Login"
-            ></input>
+            ><ExitToAppIcon className="googlelogo"></ExitToAppIcon>Login</button>
             <label className="label justify-end">
               <Link to="/register" className="label-text-alt link link-hover">
                 New Here?Please Register...
@@ -170,14 +171,7 @@ const Login = () => {
               onClick={() => signInWithGoogle()}
               className="btn btn-primary mb-3 d-flex justify-around items-center login border-0"
             >
-              <i className="fa-brands fa-google googlelogo"></i>
-              <span>Login With Google</span>
-            </button>
-          </div>
-          <div className="form-control pt-2">
-            <button className="btn btn-primary mb-3 d-flex justify-around items-center login border-0">
-              <i className="fa-brands fa-facebook-f facebooklogo"></i>
-              <span>Login With Facebook</span>
+              <span><GoogleIcon className="googlelogo"></GoogleIcon>Login With Google</span>
             </button>
           </div>
         </div>
