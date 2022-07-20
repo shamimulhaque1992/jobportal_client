@@ -1,0 +1,9 @@
+form>.password{
+  position: relative;
+}
+p>.key{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display:inline;
+}
