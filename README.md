@@ -27,7 +27,6 @@ Let's discuss about the project:
 - MaterialUI, daisy ui and tailwind used as css library.
 - Admin rut added.
 - JWT is implemented only for email login.
-- Strip Payment implemented.
 
 ### `Clone guidelines`
 
