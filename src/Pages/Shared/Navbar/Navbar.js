@@ -8,6 +8,10 @@ import HowToRegIcon from "@mui/icons-material/HowToReg";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.inti";
 import { signOut } from "firebase/auth";
+import HomeIcon from '@mui/icons-material/Home';
+import WorkIcon from '@mui/icons-material/Work';
+import SignpostIcon from '@mui/icons-material/Signpost';
+import SettingsIcon from '@mui/icons-material/Settings';
 const Navbar = () => {
   const [user] = useAuthState(auth);
   const email = user?.email;
@@ -16,23 +20,23 @@ const Navbar = () => {
     localStorage.removeItem("accessToken");
   };
   return (
-    <div className="sticky top-0 z-50 p-0 bg-stone-900 lg:bg-base-">
+    <div className="sticky top-0 z-50 p-0">
       <nav>
         <Link to="/" class="logo">
           <img src={job} alt="" />
         </Link>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link className="flex justify-center items-center" to="/"><HomeIcon></HomeIcon>Home</Link>
           </li>
           <li>
-            <Link to="/viewjobs">Veiw Jobs</Link>
+            <Link className="flex justify-center items-center" to="/viewjobs"><WorkIcon></WorkIcon>Veiw Jobs</Link>
           </li>
           <li>
-            <Link to="/postjobs">Post Jobs</Link>
+            <Link className="flex justify-center items-center" to="/postjobs"><SignpostIcon></SignpostIcon>Post Jobs</Link>
           </li>
           <li>
-            <Link to="/operation" title="Edit or Remove">Operation</Link>
+            <Link className="flex justify-center items-center" to="/operation" title="Edit or Remove"><SettingsIcon></SettingsIcon>Operation</Link>
           </li>
           <li>
             <Link to="/faq">FAQ</Link>
