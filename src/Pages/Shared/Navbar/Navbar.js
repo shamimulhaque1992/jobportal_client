@@ -35,10 +35,10 @@ const Navbar = () => {
             <Link to="/operation" title="Edit or Remove">Operation</Link>
           </li>
           <li>
-            <Link to="">FAQ</Link>
+            <Link to="/faq">FAQ</Link>
           </li>
           <li>
-            <Link to="">Contacts</Link>
+            <Link to="/contacts">Contacts</Link>
           </li>
         </ul>
         {user ? (

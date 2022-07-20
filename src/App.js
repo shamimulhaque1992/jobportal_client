@@ -15,6 +15,8 @@ import Operation from "./Pages/Operation/Operation";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./Pages/Shared/Footer/Footer";
+import Faq from "./Pages/Faq/Faq";
+import Contacts from "./Pages/Contacts/Contacts";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/forgotpassword" element={<ForgotPassword></ForgotPassword>}></Route>
+        <Route path="/faq" element={<Faq></Faq>}></Route>
+        <Route path="/contacts" element={<Contacts></Contacts>}></Route>
       </Routes>
       <ToastContainer />
       <Footer></Footer>
