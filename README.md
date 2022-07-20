@@ -3,8 +3,8 @@
 Visite the site [JobPortal](https://jobportal-d56af.web.app/).
 
 ## Developer Info:
-Name: Khandoker Shamimlu Haque
-Designation: Computer Science Engineer(B.Sc. in CSE)
+### Name: Khandoker Shamimlu Haque
+### Designation: Computer Science Engineer(B.Sc. in CSE)
 
 Let's discuss about the project:
 
