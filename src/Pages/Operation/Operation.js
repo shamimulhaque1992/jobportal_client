@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import React, { useState } from "react";
 import { toast } from "react-toastify";
 import Loading from "../Shared/Loading/Loading";
 import EditModal from "./EditModal.js/EditModal";
@@ -12,7 +12,7 @@ const Operation = () => {
     refetch,
     data: jobs,
   } = useQuery(["repoData"], () =>
-    fetch(`http://localhost:5000/jobs`, {
+    fetch(`https://gentle-peak-55740.herokuapp.com/jobs`, {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -27,7 +27,7 @@ const Operation = () => {
   const handleDeleteProduct = (_id) => {
     const conferm = window.confirm("Are you sure you want to remove this Job?");
     if (conferm) {
-      fetch(`http://localhost:5000/jobs/${_id}`, {
+      fetch(`https://gentle-peak-55740.herokuapp.com/jobs/${_id}`, {
         method: "DELETE",
         headers: {
           "content-type": "application/json",

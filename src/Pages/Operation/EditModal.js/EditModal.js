@@ -10,7 +10,7 @@ const EditModal = ({ edit }) => {
     reset,
   } = useForm();
   const onSubmit = async (data) => {
-    const url = `http://localhost:5000/jobs/${_id}`;
+    const url = `https://gentle-peak-55740.herokuapp.com/jobs/${_id}`;
     fetch(url, {
       method: "PUT",
       headers: {

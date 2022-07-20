@@ -8,29 +8,16 @@ import { Grid } from "@mui/material";
 const ViewJobs = () => {
   const [jobs, setJobs] = useJobs();
   console.log(jobs);
-  /* const {
-    data: jobs,
-    isloading,
-    refetch,
-  } = useQuery("jobs", () =>
-    fetch("http://localhost:5000/jobs", {
-      method: "GET",
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-      },
-    }).then((res) => res.json())
-  );
-  console.log(jobs);
-
-  if (isloading) {
-    return <Loading></Loading>;
-  } */
+  
   return (
+    <>
+   <div className="text-5xl text-success border-4 mt-5 mb-5">All Available Jobs</div>
     <div  className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {jobs?.map((job, index) => (
         <Job key={index} job={job}></Job>
       ))}
     </div>
+     </>
   );
 };
 

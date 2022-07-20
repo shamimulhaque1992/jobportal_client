@@ -20,7 +20,7 @@ import Contacts from "./Pages/Contacts/Contacts";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App relative">
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>

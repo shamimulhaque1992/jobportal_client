@@ -16,8 +16,8 @@ const Navbar = () => {
     localStorage.removeItem("accessToken");
   };
   return (
-    <div>
-      <nav className="sticky">
+    <div className="sticky top-0 z-50 p-0 bg-stone-900 lg:bg-base-">
+      <nav>
         <Link to="/" class="logo">
           <img src={job} alt="" />
         </Link>

@@ -10,10 +10,13 @@ const PostJobs = () => {
     reset,
   } = useForm();
   const onSubmit = async (data) => {
-    const url = `http://localhost:5000/jobs`;
+    const url = `https://gentle-peak-55740.herokuapp.com/jobs`;
     fetch(url, {
       method: "POST",
-      headers: { "content-type": "application/json" },
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        "content-type": "application/json",
+      },
       body: JSON.stringify(data),
     })
       .then((res) => res.json())
@@ -164,7 +167,6 @@ const PostJobs = () => {
                 )}
               </label>
             </div>
-
 
             <div className="form-control">
               <label className="label">
