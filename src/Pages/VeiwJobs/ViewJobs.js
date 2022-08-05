@@ -12,7 +12,7 @@ const ViewJobs = () => {
   return (
     <>
    <div className="text-5xl text-success border-4 mt-5 mb-5">All Available Jobs</div>
-    <div  className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div  className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 justify-items-center">
         {jobs?.map((job, index) => (
         <Job key={index} job={job}></Job>
       ))}

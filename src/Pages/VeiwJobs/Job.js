@@ -17,7 +17,7 @@ const Job = ({job}) => {
 
   return (
     <>
-      <div class="mt-20 card w-96 glass mx-auto">
+      <div class="mt-20 card w-72 glass mx-auto">
         <figure>
           <img style={{height:"200px"}} src={img} alt="car!" />
         </figure>
